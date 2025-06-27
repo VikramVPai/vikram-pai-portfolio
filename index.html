@@ -77,6 +77,56 @@
         body.loading {
             overflow: hidden;
         }
+        
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Scroll-triggered animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Stagger animations for cards */
+        .project-card, .skill-item, .about-stats .stat {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .project-card.visible, .skill-item.visible, .about-stats .stat.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Section animations */
+        .section-title {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .section-title.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Optimize performance */
+        * {
+            will-change: auto;
+        }
+        
+        .fade-in, .project-card, .skill-item, .about-stats .stat, .section-title {
+            will-change: transform, opacity;
+        }
     </style>
 </head>
 <body class="loading">
@@ -138,7 +188,7 @@
             <div class="hero-image">
                 <div class="profile-card">
                     <div class="profile-avatar">
-                        <img src="profile.jpg" alt="Vikram Pai">
+                        <img src="https://i.imgur.com/dqshxCF.jpeg" alt="Vikram Pai">
                     </div>
                     <div class="profile-info">
                         <h3>Vikram Pai</h3>
@@ -201,7 +251,7 @@
             <div class="projects-grid">
                 <div class="project-card education-card">
                     <div class="project-image">
-                        <img src="usf-logo1.png" alt="USF Logo" style="max-width: 160px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 24px 0;" />
+                        <img src="https://i.imgur.com/oitdA9K.png" alt="USF Logo" style="max-width: 160px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 24px 0;" />
                     </div>
                     <div class="project-content">
                         <h3>B.S. in Business Analytics &amp; Information Systems</h3>
@@ -218,7 +268,7 @@
 
                 <div class="project-card education-card">
                     <div class="project-image">
-                        <img src="usf-logo1.png" alt="USF Logo" style="max-width: 160px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 24px 0;" />
+                        <img src="https://i.imgur.com/oitdA9K.png" alt="USF Logo" style="max-width: 160px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 24px 0;" />
                     </div>
                     <div class="project-content">
                         <h3>B.A. in Economics</h3>
@@ -243,7 +293,7 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="bny-logo.png" alt="BNY Logo" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 60px 0;" />
+                        <img src="https://i.imgur.com/sqekCtq.png" alt="BNY Logo" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 60px 0;" />
                     </div>
                     <div class="project-content">
                         <h3>Operations Intern</h3>
@@ -260,7 +310,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="sigma-pi-logo-removebg-preview.png" alt="Sigma Pi Logo" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 60px 0;" />
+                        <img src="https://i.imgur.com/jKpoWpq.png" alt="Sigma Pi Logo" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 60px 0;" />
                     </div>
                     <div class="project-content">
                         <h3>Treasurer</h3>
@@ -277,7 +327,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="sigma-pi-logo-removebg-preview.png" alt="Sigma Pi Logo" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 60px 0;" />
+                        <img src="https://i.imgur.com/jKpoWpq.png" alt="Sigma Pi Logo" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 60px 0;" />
                     </div>
                     <div class="project-content">
                         <h3>Vice President</h3>
@@ -294,7 +344,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="jm-family-bg-logo.png" alt="JM Family Enterprises Logo" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 60px 0;" />
+                        <img src="https://i.imgur.com/vXNlXyq.png" alt="JM Family Enterprises Logo" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 60px 0;" />
                     </div>
                     <div class="project-content">
                         <h3>Data Governance Intern</h3>
@@ -312,7 +362,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="tcs-logo1.png" alt="Tata Consultancy Services Logo" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 60px 0;" />
+                        <img src="https://i.imgur.com/c4ffCLh.png" alt="Tata Consultancy Services Logo" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto; padding: 60px 0;" />
                     </div>
                     <div class="project-content">
                         <h3>Data Analytics &amp; Science Intern</h3>
@@ -474,5 +524,46 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <script>
+        // Smooth scroll animations
+        function handleScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all elements that need animations
+            const animatedElements = document.querySelectorAll('.section-title, .project-card, .skill-item, .about-stats .stat, .about-content, .contact-content');
+            animatedElements.forEach(el => observer.observe(el));
+        }
+        
+        // Initialize animations when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            handleScrollAnimations();
+            
+            // Add staggered delay to cards for smoother effect
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach((card, index) => {
+                card.style.transitionDelay = `${index * 0.1}s`;
+            });
+            
+            const skillItems = document.querySelectorAll('.skill-item');
+            skillItems.forEach((item, index) => {
+                item.style.transitionDelay = `${index * 0.05}s`;
+            });
+        });
+        
+        // Re-run animations on window resize
+        window.addEventListener('resize', handleScrollAnimations);
+    </script>
 </body>
 </html> 
