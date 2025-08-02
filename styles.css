@@ -824,6 +824,12 @@ section.education .education-card .project-image,
     .section-title {
         font-size: 2rem;
     }
+
+    .education .projects-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
