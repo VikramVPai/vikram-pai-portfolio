@@ -134,6 +134,15 @@
     <div id="loadingScreen" class="loading-screen">
     </div>
 
+    <!-- Disclaimer Modal -->
+    <div id="disclaimerModal" class="disclaimer-modal">
+        <div class="disclaimer-content">
+            <h3>Viewing Notice</h3>
+            <p>This portfolio is designed for desktop viewing. Mobile users may need to adjust their browser zoom to 50% for the intended layout.</p>
+            <button onclick="closeDisclaimer()" class="disclaimer-btn">Got it</button>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -580,6 +589,11 @@
     <script src="script.js"></script>
     
     <script>
+        // Disclaimer modal function
+        function closeDisclaimer() {
+            document.getElementById('disclaimerModal').style.display = 'none';
+        }
+        
         // Smooth scroll animations
         function handleScrollAnimations() {
             const observerOptions = {
