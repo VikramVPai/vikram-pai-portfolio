@@ -825,6 +825,21 @@ section.education .education-card .project-image,
         font-size: 2rem;
     }
 
+    .project-card {
+        flex-direction: column;
+    }
+    
+    .project-image {
+        flex: none;
+        width: 100%;
+        height: 200px;
+    }
+    
+    .project-content {
+        flex: 1;
+        padding: 1.5rem;
+    }
+    
     .education .projects-grid {
         display: flex;
         flex-direction: column;
