@@ -941,6 +941,7 @@ section.education .tech-tag {
 } 
 
 /* Disclaimer Modal */
+/*
 .disclaimer-modal {
     position: fixed;
     top: 0;
@@ -988,4 +989,5 @@ section.education .tech-tag {
 
 .disclaimer-btn:hover {
     background: #005a3f;
-} 
+}
+*/ 
